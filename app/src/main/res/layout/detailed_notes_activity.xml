@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/note_activity_background"
+                android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Title"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitNotes"
+        android:layout_below="@+id/noteTitle"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@drawable/note_background"
+        android:hint="enter your notes"
+        />
+
+    <TextView
+        android:id="@+id/submitNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_drawable_background"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="CREATE NEW"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
